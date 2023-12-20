@@ -74,9 +74,18 @@ a {
 
 #jumbo {
     width: calc(100% - var(--sidebar-width));
-    height: 100px;
     background-color: #1a72e8;
+    color: white;
+    
+    /* debug */
+    height: 200px;
 }
+
+#jumbo .piani a {
+    font-size: .8rem;
+    background-color: #165bba;
+    
+} 
 
         /* ## RESPONSIVE ## */
 
