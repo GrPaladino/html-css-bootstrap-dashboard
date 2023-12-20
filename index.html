@@ -17,53 +17,51 @@
 <body>
     <!-- HEADER -->
     <header id="header">
-        <nav class="navbar">
-            <div class="container-fluid d-flex">
-                <!-- Logo -->
-                <a class="navbar-brand d-none d-lg-block" href="#">
-                    <img src="./img/logo.svg" alt="Logo">
+        <div class="container-fluid d-flex flex-nowrap navbar">
+            <!-- Logo -->
+            <a class="navbar-brand d-none d-lg-block" href="#">
+                <img src="./img/logo.svg" alt="Logo">
+            </a>
+
+            <div class="small-logo d-lg-none">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/mobile-logo.png" alt="Logo" class="img-fluid">
                 </a>
+            </div>
 
-                <div class="small-logo d-lg-none">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/mobile-logo.png" alt="Logo" class="img-fluid">
-                    </a>
-                </div>
+            <!-- Search bar -->
+            <form class="d-flex flex-grow-1 mx-2" role="search">
+                <button class="btn btn-outline-secondary border border-0 mx-1" type="submit"><i class="fa fa-search"></i></button>
+                <input class="flex-grow-1 border border-0 rounded p-2" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
+            </form>
 
-                <!-- Search bar -->
-                <form class="d-flex flex-grow-1 mx-2" role="search">
-                    <button class="btn btn-outline-secondary border border-0 mx-1" type="submit"><i class="fa fa-search"></i></button>
-                    <input class="flex-grow-1 border border-0 rounded p-2" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
-                </form>
-
-                <!-- Links -->
-                <ul class="navbar-nav mx-2 flex-row">
-                    <div class="hidden-links d-lg-flex d-none d-lg-block">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                        </li>
-                    </div>
-                    <div class="dropdown d">
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell icon"></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-start">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>                            </ul>
-                        </li>
-                    </div>
+            <!-- Links -->
+            <div class="d-none d-lg-block">
+                <ul class="d-lg-flex align-items-center">
+                    <li>
+                      <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </li>
+                </ul>
+            </div>
+                <div class="dropdown position-relative">
+                    <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell icon"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-light position-absolute">
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                   </ul>
                 </div>
             </div>
-          </nav>
-    </header>
+        </div>
+   </header>
 
     <!-- MAIN -->
     <main></main>

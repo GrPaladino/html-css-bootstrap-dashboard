@@ -1,3 +1,10 @@
+/* UTILS */
+
+li {
+    list-style: none;
+}
+
+
 /* HEADER */
 
 #header .small-logo {
@@ -9,10 +16,18 @@
     background-color: lightgrey;
 }
 
+#header ul {
+    margin: 0;
+}
+
 #header li {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 #header .icon {
     color: var(--bs-warning);
+}
+
+#header .dropdown-menu {
+    transform: translate(-140px, -5px);
 }
