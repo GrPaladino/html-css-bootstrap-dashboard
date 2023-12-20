@@ -1,11 +1,28 @@
-/* UTILS */
+        /* CUSTOM PROPS */
 
-li {
+:root {
+    --header-bar: 60px;
+}
+ 
+ 
+ 
+        /* UTILS */
+
+ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
-/* HEADER */
+
+        /* HEADER */
+
+#header {
+    height: var(--header-bar);
+}
 
 #header .small-logo {
     max-width: 50px;
@@ -30,4 +47,29 @@ li {
 
 #header .dropdown-menu {
     transform: translate(-140px, -5px);
+}
+
+            /* MAIN */
+
+/* Sidebar section */
+
+#sidebar {
+    height: calc(100vh - var(--header-bar));
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #11273d;
+    max-width: 60px;
+}
+
+#sidebar span {
+    font-size: .8rem;
+}
+
+
+        /* ## RESPONSIVE ## */
+
+@media screen and (min-width: 992px) {
+    #sidebar {
+        max-width: 140px;
+    }
+    
 }
