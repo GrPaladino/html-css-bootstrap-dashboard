@@ -2,11 +2,16 @@
 
 :root {
     --header-bar: 60px;
+    --sidebar-width: 60px;
 }
  
  
  
         /* UTILS */
+
+body {
+    height: 100vh;
+}
 
 ul {
     list-style: none;
@@ -51,25 +56,34 @@ a {
 
             /* MAIN */
 
+
 /* Sidebar section */
 
 #sidebar {
     height: calc(100vh - var(--header-bar));
     background-image: url(../img/sidebar-bg.png);
     background-color: #11273d;
-    max-width: 60px;
+    width: var(--sidebar-width);
 }
 
 #sidebar span {
     font-size: .8rem;
 }
 
+/* Top bar section */
+
+#jumbo {
+    width: calc(100% - var(--sidebar-width));
+    height: 100px;
+    background-color: #1a72e8;
+}
 
         /* ## RESPONSIVE ## */
 
 @media screen and (min-width: 992px) {
-    #sidebar {
-        max-width: 140px;
+    /* CUSTOM PROPS */
+
+    :root {
+        --sidebar-width: 140px;
     }
-    
 }
