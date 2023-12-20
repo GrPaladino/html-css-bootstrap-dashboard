@@ -1,5 +1,9 @@
 /* HEADER */
 
+#header .small-logo {
+    max-width: 50px;
+}
+
 #header form input,
 #header form button {
     background-color: lightgrey;

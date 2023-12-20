@@ -20,18 +20,22 @@
         <nav class="navbar">
             <div class="container-fluid d-flex">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#" class="d-lg-none">
+                <a class="navbar-brand d-none d-lg-block" href="#">
                     <img src="./img/logo.svg" alt="Logo">
                 </a>
 
-                <a class="navbar-brand" href="#">
-                    <img src="./img/mobile-logo.png" alt="Logo" class="d-none d-lg-block">
-                </a>
+                <div class="small-logo d-lg-none">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/mobile-logo.png" alt="Logo" class="img-fluid">
+                    </a>
+                </div>
+
                 <!-- Search bar -->
                 <form class="d-flex flex-grow-1 mx-2" role="search">
                     <button class="btn btn-outline-secondary border border-0 mx-1" type="submit"><i class="fa fa-search"></i></button>
                     <input class="flex-grow-1 border border-0 rounded p-2" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
                 </form>
+
                 <!-- Links -->
                 <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
                     <li class="nav-item">
