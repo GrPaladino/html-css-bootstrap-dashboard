@@ -9,10 +9,6 @@
  
         /* UTILS */
 
-body {
-    height: 100vh;
-}
-
 ul {
     list-style: none;
 }
@@ -61,9 +57,9 @@ a {
 
 #sidebar {
     height: calc(100vh - var(--header-bar));
+    width: var(--sidebar-width);
     background-image: url(../img/sidebar-bg.png);
     background-color: #11273d;
-    width: var(--sidebar-width);
 }
 
 #sidebar span {
@@ -78,6 +74,7 @@ a {
 
 main #cnt {
     height: calc(100vh - var(--header-bar));
+    width: calc(100% - var(--sidebar-width));
 }
 
 /* Top bar section */
@@ -144,6 +141,11 @@ main #cnt {
 #page-cnt input.form-check-input {
     margin-left: -16px;
 }
+
+#page-cnt .card a {
+    text-decoration: underline;
+    color: #4791fd;
+}
         /* ## RESPONSIVE ## */
 
 @media screen and (min-width: 992px) {
@@ -152,13 +154,11 @@ main #cnt {
     :root {
         --sidebar-width: 140px;
     }
+    
     /* JUMBO */
 
     /* Top bar section */
-    #jumbo {
-        max-height: 120px;
-    }
-
+    
     #jumbo .offcanvas {
     width: 40%;
     }
