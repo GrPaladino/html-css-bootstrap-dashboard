@@ -76,13 +76,11 @@ a {
     width: calc(100% - var(--sidebar-width));
     background-color: #1a72e8;
     color: white;
-    
-    /* debug */
-    height: 200px;
+    max-height: 240px;
 }
 
 #jumbo .piani a {
-    font-size: .8rem;
+    font-size: .6rem;
     background-color: #165bba;
     
 } 
@@ -94,5 +92,10 @@ a {
 
     :root {
         --sidebar-width: 140px;
+    }
+
+    /* Top bar section */
+    #jumbo {
+        max-height: 120px;
     }
 }

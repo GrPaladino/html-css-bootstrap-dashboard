@@ -32,7 +32,7 @@
             <!-- Search bar -->
             <form class="d-flex flex-grow-1 mx-2" role="search">
                 <button class="btn btn-outline-secondary border border-0 mx-1" type="submit"><i class="fa fa-search"></i></button>
-                <input class="flex-grow-1 border border-0 rounded p-2" type="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
+                <input class="flex-grow-1 border border-0 rounded p-2" type="text" name="search" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search">
             </form>
 
             <!-- Links -->
@@ -99,27 +99,44 @@
         </section>
 
         <!-- TOP-BAR -->
-        <section id="jumbo" class="p-2">
-            <div class="of-c">
-                <button class="btn btn-primary ps-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    Nuovo Studente
-                    <i class="fa-solid fa-plus p-2 ms-3 border rounded"></i>
-                </button>
-    
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        ...
+        <section id="jumbo" class="p-3 ">
+            <div class="container d-lg-flex justify-content-between align-items-center -auto">
+                <div class="of-c order-3">
+                    <button class="btn btn-primary ps-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        Nuovo Studente
+                        <i class="fa-solid fa-plus p-2 ms-3 border rounded"></i>
+                    </button>
+        
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
                     </div>
                 </div>
-            </div>
-                    <!-- Completare top-bar sezione boolean + links -->
-            <div class="piani">
-                 <h1 class="h2 d-inline-block">Boolean</h1>
-                 <a href="#" class="d-inline-block border-0 rounded-4 px-2 py-1">Piano blaze</a>
+                
+                <div class="piani mb-4 py-2">
+                    <div class="up-links d-flex align-items-center">
+                        <h1 class="h2 me-2">Boolean</h1>
+                        <a href="#" class="border-0 rounded-4 px-2 py-1">Piano blaze</a>
+                    </div>
+                    <div class="bottom-links d-flex align-items-center">
+                        <a href="#" class="d-block border-0 rounded-4 px-2 py-1">3 app</a>
+                        <i class="fa-solid fa-angles-right mx-2 align"></i>
+                        <a href="#" class="d-block border-0 rounded-4 px-2 py-1 d-lg-none"><i class="fa-solid fa-plus"></i></a>
+                        <a href="#" class="d-block border-0 rounded-4 px-2 py-1 mx-1 d-none d-lg-inline">Boolean mobile app</a>
+                        <a href="#" class="d-block border-0 rounded-4 px-2 py-1 mx-1 d-none d-lg-inline">Boolean web app</a>
+                        <a href="#" class="d-block border-0 rounded-4 px-2 py-1 mx-1 d-none d-lg-inline">Boolean blog app</a>
+                    </div>
+                </div>
+
+                <div class="studenti">
+                    <p class="mb-0">Studenti online negli ultimi 30 minuti</p>
+                    <span>125</span>
+                </div>
             </div>
 
         </section>
