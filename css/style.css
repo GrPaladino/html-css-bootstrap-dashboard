@@ -74,13 +74,17 @@ a {
     background-color: grey;
 }
 
+/* CNT SECTION */
+
+main #cnt {
+    height: calc(100vh - var(--header-bar));
+}
+
 /* Top bar section */
 
 #jumbo {
-    width: calc(100% - var(--sidebar-width));
     background-color: #1a72e8;
     color: white;
-    max-height: 240px;
 }
 
 #jumbo .piani a {
@@ -96,6 +100,41 @@ a {
     margin-left: 13px;
 }
 
+/* MAIN PAGE CNT */
+
+#page-cnt h3 {
+    background-color: #f7f7f7;
+}
+
+/* Table */
+
+#page-cnt table,
+#page-cnt .accprdion {
+    font-size: .8rem;
+}
+
+#page-cnt td > i {
+    color: white;
+    background-color: #f26551;
+    border-radius: 50%;
+}
+
+#page-cnt .status {
+    color: white;
+    font-size: .7rem;
+}
+
+#page-cnt .status.done {
+    background-color: #1a8754;
+}
+
+#page-cnt .status.process {
+    background-color: #ffc109;
+}
+
+#page-cnt .status.failed {
+    background-color: #dc3545;
+}
 
         /* ## RESPONSIVE ## */
 
