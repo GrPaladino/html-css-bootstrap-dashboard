@@ -108,8 +108,7 @@ main #cnt {
 
 /* Table */
 
-#page-cnt table,
-#page-cnt .accprdion {
+#page-cnt {
     font-size: .8rem;
 }
 
@@ -136,6 +135,15 @@ main #cnt {
     background-color: #dc3545;
 }
 
+/* CHECKBOX SECTION */
+
+#page-cnt .form-check {
+    margin-bottom: 0;
+}
+
+#page-cnt input.form-check-input {
+    margin-left: -16px;
+}
         /* ## RESPONSIVE ## */
 
 @media screen and (min-width: 992px) {
