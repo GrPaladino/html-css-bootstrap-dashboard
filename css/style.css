@@ -146,7 +146,11 @@ main #cnt {
     text-decoration: underline;
     color: #4791fd;
 }
-        /* ## RESPONSIVE ## */
+        
+
+
+
+            /* ## RESPONSIVE ## */
 
 @media screen and (min-width: 992px) {
     /* CUSTOM PROPS */
