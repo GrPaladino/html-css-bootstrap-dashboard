@@ -71,28 +71,28 @@
             <div class="menu">
                 <ul class="p-0">
                     <li class="mb-4">
-                        <a href="#">
+                        <a href="#" class="p-2">
                             <i class="fa-solid fa-house"></i>
                             <span class="d-none d-lg-inline-block ps-3">Home</span>
                         </a>
                     </li>
 
                     <li class="mb-4">
-                        <a href="#">
+                        <a href="#" class="p-2">
                             <i class="fa-solid fa-chart-simple"></i>
                             <span class="d-none d-lg-inline-block ps-3">Stats</span>
                         </a>
                     </li>
 
                     <li class="mb-4">
-                        <a href="#">
+                        <a href="#" class="p-2">
                             <i class="fa-solid fa-signal"></i>
                             <span class="d-none d-lg-inline-block ps-3">Signals</span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <a href="#">
+            <a href="#" class="p-2">
                 <i class="fa-solid fa-gear"></i>
                 <span class="d-none d-lg-inline-block ps-3">Admin</span>
             </a>
@@ -109,12 +109,96 @@
         
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body">
-                            ...
-                        </div>
+                        <form class="offcanvas-body container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="Input-name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="Input-name">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="Input-surname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="Input-surname">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="Input-adress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="Input-adress">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="Input-city" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="Input-city">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <div class="mb-3">
+                                        <label for="state" class="form-label">Stato</label>
+                                        <select class="form-select" aria-label="Default select example" id="state">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">US</option>
+                                            <option value="3">UK</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-2">
+                                    <div class="mb-3">
+                                        <label for="Input-cap" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="Input-cap">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="inputGroupFile04">Foto</label>
+                                        <div class="input-group">
+                                            <input type="file" class="form-control" id="inputGroupFile04" aria-label="Upload">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Seleziona per proseguire
+                                    </label>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Salva</button>
+                                    <button class="btn btn-warning" type="submit">Svuota</button>
+                                </div>
+                                
+                                
+                            </div>
+                        </form>
                     </div>
                 </div>
                 

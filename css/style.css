@@ -70,6 +70,10 @@ a {
     font-size: .8rem;
 }
 
+#sidebar a:hover {
+    background-color: grey;
+}
+
 /* Top bar section */
 
 #jumbo {
@@ -82,8 +86,16 @@ a {
 #jumbo .piani a {
     font-size: .6rem;
     background-color: #165bba;
-    
-} 
+}
+
+#jumbo .offcanvas {
+    width: 100%;
+}
+
+#jumbo .form-check {
+    margin-left: 13px;
+}
+
 
         /* ## RESPONSIVE ## */
 
@@ -93,9 +105,14 @@ a {
     :root {
         --sidebar-width: 140px;
     }
+    /* JUMBO */
 
     /* Top bar section */
     #jumbo {
         max-height: 120px;
+    }
+
+    #jumbo .offcanvas {
+    width: 40%;
     }
 }
